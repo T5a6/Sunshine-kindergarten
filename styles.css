@@ -1,0 +1,20 @@
+nav ul{
+    display: block;
+}
+
+.header_container nav li{
+    display:inline;
+    padding: 20px;
+}
+
+a img {
+    width: 80px;
+    display: inline;
+}
+
+footer img{
+    width: 80px;
+    display: inline;
+}
+
+
