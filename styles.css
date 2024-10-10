@@ -1,14 +1,30 @@
 /* Header Title Styles */
 h2 {
-    background-color: #b47b7b; 
+    background-color: #ecb9b9; 
     padding: 15px;
     text-align: center;
     font-family: 'Times New Roman', cursive, serif; 
     font-size: 36px; 
-    color: #987D9A;
+    color: #CA8787;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     transition: transform 0.3s ease; 
     transform: scale(1.1);
+}
+
+h3{
+    font-family: 'Courier', cursive, monospace;
+    text-align: center; 
+    color:#944E63;
+    font-size: 25px; 
+    background-color: #F1E5D1;
+
+}
+
+p{
+    font-family: 'Courier', cursive, monospace;
+    text-align: center;
+    font-size: 25px; 
+    color:#944E63;
 }
 
 .button-container {
@@ -25,7 +41,7 @@ h2 {
     background: transparent;
     border: none;
     position: relative;
-    color: #f0f0f0;
+    color: #e2b0b0;
     cursor: pointer;
     z-index: 1;
     padding: 10px 20px;
@@ -38,8 +54,8 @@ h2 {
     touch-action: manipulation;
 }
 
-.button-86::after,
-.button-86::before {
+.button::after,
+.button::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -48,38 +64,38 @@ h2 {
     transition: all .4s;
 }
 
-.button-86::before {
+.button::before {
     transform: translate(0%, 0%);
     width: 100%;
     height: 100%;
-    background: #E4D0D0;
+    background: #DBAFA0;
     border-radius: 10px;
 }
 
-.button-86::after {
+.button::after {
     transform: translate(10px, 10px);
     width: 35px;
     height: 35px;
-    background: #F5EBEB;
+    background: #ca878763;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 50px;
 }
 
-.button-86:hover::before {
+.button:hover::before {
     transform: translate(5%, 20%);
     width: 110%;
     height: 110%;
 }
 
-.button-86:hover::after {
+.button:hover::after {
     border-radius: 10px;
     transform: translate(0, 0);
     width: 100%;
     height: 100%;
 }
 
-.button-86:active::after {
+.button:active::after {
     transition: 0s;
     transform: translate(0, 5%);
 }
@@ -105,8 +121,16 @@ body {
 
 h1 {
     text-align: center;
-    color: #df8d8d;
+    color: #FFD0D0;
     margin-bottom: 20px;
+    background-color: #CA8787; 
+    padding: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', cursive, serif; 
+    font-size: 36px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; 
+    transform: scale(1.1);
 }
 
 .schedule-table {
@@ -122,12 +146,26 @@ h1 {
 }
 
 .schedule-table th {
-    background-color: #867070; /* Green background for header */
-    color: white;
+    background-color: #CAA6A6; /* brown background for header */
+    color: #ffffff;
+    font-family: 'Courier', cursive, monospace;
+
 }
 
-.schedule-table tr:nth-child(even) {
-    background-color: #f9f9f9; /* Light gray for even rows */
+.schedule-table tr:nth-child(odd) {
+    background-color: #FFE3E3;
+    font-family: 'Courier', cursive, monospace;
+    font-weight: bold;
+    padding: 10px 0;
+    font-family: 'Courier', cursive, monospace;
+}
+
+.schedule-table tr:nth-child(even)  {
+    background-color: #FFE3E3;
+    font-family: 'Courier', cursive, monospace;
+    font-weight: bold;
+    padding: 10px 0;
+    font-family: 'Courier', cursive, monospace;
 }
 
 .schedule-table tr:hover {
@@ -135,10 +173,12 @@ h1 {
 }
 
 .schedule-table td.lunch {
-    background-color: #e9d52894; /* Yellow background for lunch */
+    background-color: #f0e691b4; /* Yellow background for lunch */
     font-weight: bold;
     padding: 10px 0;
+    font-family: 'Courier', cursive, monospace;
 }
+
 
 @media (max-width: 600px) {
     .schedule-table th, .schedule-table td {
@@ -146,22 +186,6 @@ h1 {
         font-size: 14px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .header_container nav li{
@@ -175,7 +199,12 @@ a img {
 }
 
 footer img{
-    width: 80px;
-    display: inline;
-}
+    width: 50px;
+    display: center;}
+
+footer{
+    font-family: 'Courier', cursive, monospace;
+    text-align: center; 
+    color:#944E63;
+    font-size: 20px; }
 
