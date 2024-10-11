@@ -51,6 +51,11 @@ p{
         font-size: 14px;
     }
 }
+
+.header_container button{
+    margin: auto;
+}
+
 .button-container {
     display: flex;
     gap: 10px; /* Space between buttons */
