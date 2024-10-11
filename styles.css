@@ -1,4 +1,19 @@
 /* Header Title Styles */
+h1 {
+    text-align: center;
+    color: #FFD0D0;
+    margin-bottom: 20px;
+    background-color: #CA8787; 
+    padding: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', cursive, serif; 
+    font-size: 36px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; 
+    transform: scale(1.1);
+}
+
+
 h2 {
     background-color: #ecb9b9; 
     padding: 15px;
@@ -11,6 +26,8 @@ h2 {
     transform: scale(1.1);
 }
 
+
+
 h3{
     font-family: 'Courier', cursive, monospace;
     text-align: center; 
@@ -19,7 +36,6 @@ h3{
     background-color: #F1E5D1;
 
 }
-
 p{
     font-family: 'Courier', cursive, monospace;
     text-align: center;
@@ -27,13 +43,21 @@ p{
     color:#944E63;
 }
 
+@media (max-width: 600px) {
+    .button-container, .button, .button::after,
+    .button::before,.button:hover::before,.button:hover::after,
+    .button:active::after{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
 .button-container {
     display: flex;
     gap: 10px; /* Space between buttons */
     margin-top: 20px; /* Margin above buttons */
 }
 
-.button-86 {
+.button {
     all: unset;
     width: 100px;
     height: 30px;
@@ -103,93 +127,65 @@ p{
  
 /*table*/
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Courier', cursive, monospace;
     background-color: #f0f0f0;
     margin: 0;
     padding: 20px;
 }
 
-.schedule-container {
-    max-width: 900px;
+.schedule.container {
+    max-width: 800px;
     margin: 0 auto;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     padding: 20px;
 }
 
-h1 {
+#schedule_s {
     text-align: center;
     color: #FFD0D0;
     margin-bottom: 20px;
-    background-color: #CA8787; 
-    padding: 15px;
-    text-align: center;
-    font-family: 'Times New Roman', cursive, serif; 
-    font-size: 36px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    transition: transform 0.3s ease; 
-    transform: scale(1.1);
 }
 
-.schedule-table {
+table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.schedule-table th, .schedule-table td {
+th, td {
     border: 1px solid #ddd;
     padding: 15px;
     text-align: center;
     transition: background-color 0.3s;
 }
 
-.schedule-table th {
-    background-color: #CAA6A6; /* brown background for header */
+th {
+    background-color: #CA8787; /* brown background for header */
     color: #ffffff;
     font-family: 'Courier', cursive, monospace;
-
-}
-
-.schedule-table tr:nth-child(odd) {
-    background-color: #FFE3E3;
-    font-family: 'Courier', cursive, monospace;
     font-weight: bold;
     padding: 10px 0;
-    font-family: 'Courier', cursive, monospace;
 }
 
-.schedule-table tr:nth-child(even)  {
-    background-color: #FFE3E3;
-    font-family: 'Courier', cursive, monospace;
-    font-weight: bold;
-    padding: 10px 0;
-    font-family: 'Courier', cursive, monospace;
-}
 
-.schedule-table tr:hover {
+tr:hover {
     background-color: #e0e0e0; /* Highlight row on hover */
 }
 
-.schedule-table td.lunch {
+td.lunch {
     background-color: #f0e691b4; /* Yellow background for lunch */
     font-weight: bold;
     padding: 10px 0;
-    font-family: 'Courier', cursive, monospace;
 }
 
-
 @media (max-width: 600px) {
-    .schedule-table th, .schedule-table td {
+    th, td {
         padding: 10px;
         font-size: 14px;
     }
 }
 
-.header_container button{
-    margin: auto; 
-}
 
 .header_container nav li{
     display:inline;
@@ -210,4 +206,3 @@ footer{
     text-align: center; 
     color:#944E63;
     font-size: 20px; }
-
