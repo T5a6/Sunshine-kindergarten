@@ -187,6 +187,9 @@ h1 {
     }
 }
 
+.header_container button{
+    margin: auto; 
+}
 
 .header_container nav li{
     display:inline;
