@@ -135,7 +135,6 @@ body {
     font-family: 'Courier', cursive, monospace;
     background-color: #f0f0f0;
     margin: 0;
-    padding: 20px;
 }
 
 .schedule.container {
@@ -222,4 +221,10 @@ footer {
     position: relative;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
   }
+.activity-gallery{
+    display:flex;
+    justify-content:center;
+    align-content: flex;
+}
+
 
