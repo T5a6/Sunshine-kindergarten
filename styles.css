@@ -64,7 +64,7 @@ p{
 
 .button {
     all: unset;
-    width: 100px;
+    width: 150px;
     height: 30px;
     font-size: 16px;
     background: transparent;
@@ -202,12 +202,24 @@ a img {
     display: inline;
 }
 
+li{
+    display: block;
+}
+
 footer img{
     width: 50px;
-    display: center;}
+    display:flex;}
 
-footer{
+footer {
     font-family: 'Courier', cursive, monospace;
-    text-align: center; 
-    color:#944E63;
-    font-size: 20px; }
+    text-align: left;
+    padding: 3px;
+    font-size: 20px; 
+    background-color: #ecb9b9;
+    margin-top: 100px;
+    color: #CA8787;
+    left:0;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  }
+
