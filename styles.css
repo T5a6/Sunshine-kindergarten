@@ -225,6 +225,15 @@ footer {
     display:flex;
     justify-content:center;
     align-content: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 50%;
+}
+
+section img{
+    display: flex;
+    width:300px;
+    height: 300px;
 }
 
 
