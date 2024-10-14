@@ -350,3 +350,15 @@ img:hover {
     padding: 20px; /* Add padding inside the box */
     margin: 20px; /* Space around the box */
 }
+
+.email_image{ /*to inline the emails logo */
+    display:flex;
+    justify-content: center;
+    align-content: flex;
+}
+
+a img{ /*to change the width, margin and padding of the email logos */
+    width: 100px;
+    margin: 50px;
+    padding: 30px;
+}
